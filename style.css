@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+    margin: 0;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.game-container {
+    text-align: center;
+}
+
+canvas {
+    border: 1px solid #fff;
+    background-color: #000;
+    display: block; /* Prevents extra space below canvas */
+    margin: 0 auto; /* Center canvas if it's the only block element */
+}
+
+.score-display {
+    margin-top: 10px;
+    font-size: 2em;
+    margin-bottom: 20px; /* Add space below score */
+}
+
+.difficulty-selection {
+    margin-top: 20px;
+}
+
+.difficulty-selection span {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.difficulty-selection button {
+    padding: 8px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.difficulty-selection button:hover {
+    background-color: #555;
+}
+
+/* Optional: Highlight active button */
+.difficulty-selection button.active {
+    background-color: #007bff;
+    border-color: #007bff;
+}

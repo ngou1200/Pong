@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="pongCanvas" width="600" height="400"></canvas>
+        <div class="score-display">
+            <span id="playerScore">0</span> - <span id="aiScore">0</span>
+        </div>
+
+        <div class="difficulty-selection">
+            <span>Select AI Difficulty:</span>
+            <button id="btnBeginner" data-difficulty="beginner">Beginner</button>
+            <button id="btnIntermediate" data-difficulty="intermediate">Intermediate</button>
+            <button id="btnAdvanced" data-difficulty="advanced">Advanced</button>
+            <button id="btnExpert" data-difficulty="expert">Expert</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
